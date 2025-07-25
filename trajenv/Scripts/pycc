@@ -1,0 +1,3 @@
+#!E:\mechinelearning\TrajectoriesCompressionAnalysis-main\trajenv\Scripts\python.exe
+from numba.pycc import main
+main()
