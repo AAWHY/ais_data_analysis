@@ -4,27 +4,26 @@
 请使用 **Python 3.9.5**，安装依赖：
 ```bash
 pip install -r requirements.txt
-2. 如何修改参数
+## 2. 如何修改参数
 
-编辑 vessel_analysis.py 文件，根据需求调整以下参数：
+编辑 `vessel_analysis.py` 文件，根据需求调整以下参数：
 
-    数据路径：
-
-        渔船轨迹：
-
-data_path = './data/crop/DCAIS_[30, 1001, 1002]_region_[37.6, 39, -122.9, -122.2]_01-04_to_30-06_trips.csv'
-
-油轮轨迹：
-
+- **数据路径**：
+  - 渔船轨迹：
+    ```python
+    data_path = './data/crop/DCAIS_[30, 1001, 1002]_region_[37.6, 39, -122.9, -122.2]_01-04_to_30-06_trips.csv'
+    ```
+  - 油轮轨迹：
+    ```python
     data_path = './data/crop/DCAIS_[80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 1017, 1024]_region_[47.5, 49.3, -125.5, -122.5]_01-04_to_30-06_trips.csv'
+    ```
 
-距离度量方法（四选一）：
-
-metric = 'dtw'  # 可选值：'dtw'、'dfd'、'hd'、'md'
-
-最小聚类大小（根据船型选择）：
-
-    msc = 2  # 渔船用2，油轮用3
+- **距离度量方法（四选一）**：
+  ```python
+  metric = 'dtw'  # 可选值：'dtw'、'dfd'、'hd'、'md'
+- **最小聚类大小（根据船型选择）**：
+```python
+  msc = 2  # 渔船用2，油轮用3
 
 3. 如何运行项目
 
